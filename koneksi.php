@@ -2,9 +2,16 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
-ini_set('error_log', dirname(__FILE__) . '/error.log');
+ini_set('error_log', __DIR__ . '/error.log');
 
-$conn = mysqli_connect("localhost", "root", "", "elearning");
+// Database configuration for Hostinger / local development
+$db_host = getenv('DB_HOST') ?: 'localhost';
+$db_user = getenv('DB_USER') ?: 'root';
+$db_pass = getenv('DB_PASS') ?: '';
+$db_name = getenv('DB_NAME') ?: 'elearning';
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
-    die("Koneksi gagal");
+    error_log('Database connection failed: ' . mysqli_connect_error());
+    die('Koneksi database gagal. Silakan periksa konfigurasi database.');
 }
