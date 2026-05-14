@@ -1,0 +1,1270 @@
+[09-Jan-2026 15:16:36 Europe/Berlin] PHP Warning:  move_uploaded_file(../tugas/1767968196_HANYA UNTUK UJI COBA SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:16:36 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpECD8.tmp&quot; to &quot;../tugas/1767968196_HANYA UNTUK UJI COBA SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:25:06 Europe/Berlin] PHP Warning:  move_uploaded_file(../tugas/1767968706_HANYA UNTUK UJI COBA SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:25:06 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpB557.tmp&quot; to &quot;../tugas/1767968706_HANYA UNTUK UJI COBA SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:37:27 Europe/Berlin] PHP Warning:  move_uploaded_file(../tugas/1767969447_HANYA UNTUK UJI COBA SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:37:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php49C.tmp&quot; to &quot;../tugas/1767969447_HANYA UNTUK UJI COBA SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:50:01 Europe/Berlin] PHP Warning:  move_uploaded_file(../tugas/1767970201_HANYA UNTUK UJI COBA SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[09-Jan-2026 15:50:01 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php858F.tmp&quot; to &quot;../tugas/1767970201_HANYA UNTUK UJI COBA SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 15
+[15-Jan-2026 04:41:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:26:54 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:01 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:01 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:30:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:18 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:36:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:39:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:08 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:39:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:99
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(99): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 99
+[16-Jan-2026 08:41:59 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:41:59 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:42:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:42:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:42:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 93
+[16-Jan-2026 08:44:45 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:45:18 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:46:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:47:19 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:49:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.dosen' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:38
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(38): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 38
+[16-Jan-2026 08:53:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:41 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:53:41 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 08:54:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[16-Jan-2026 09:17:47 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 10:37:25 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 10:37:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 10:39:36 Europe/Berlin] PHP Warning:  Undefined array key "matkul_id" in C:\xampp\htdocs\elearning\admin\edit_user.php on line 25
+[11-May-2026 11:26:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 11:28:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 11:30:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:44
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(44): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 44
+[11-May-2026 11:51:25 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778493085_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 11:51:25 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php93DF.tmp&quot; to &quot;../upload/tugas/1778493085_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 12:04:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php:5
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php(5): mysqli_query(Object(mysqli), '\r\n    SELECT fi...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php on line 5
+[11-May-2026 12:05:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php:5
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php(5): mysqli_query(Object(mysqli), '\r\n    SELECT fi...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php on line 5
+[11-May-2026 12:08:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php:5
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php(5): mysqli_query(Object(mysqli), '\r\n    SELECT fi...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php on line 5
+[11-May-2026 12:08:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php:5
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php(5): mysqli_query(Object(mysqli), '\r\n    SELECT fi...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php on line 5
+[11-May-2026 12:15:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php:5
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php(5): mysqli_query(Object(mysqli), '\r\n    SELECT fi...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\hapus_tugas.php on line 5
+[11-May-2026 12:16:16 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778494576_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 11
+[11-May-2026 12:16:16 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php56D8.tmp&quot; to &quot;../upload/tugas/1778494576_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 11
+[11-May-2026 12:16:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_pengumpulan' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php:13
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php(13): mysqli_query(Object(mysqli), '\r\n            U...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 13
+[11-May-2026 12:17:34 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778494654_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 11
+[11-May-2026 12:17:34 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php83FF.tmp&quot; to &quot;../upload/tugas/1778494654_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 11
+[11-May-2026 12:17:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php:13
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php(13): mysqli_query(Object(mysqli), '\r\n            U...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 13
+[11-May-2026 12:18:27 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778494707_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 49
+[11-May-2026 12:18:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php53D3.tmp&quot; to &quot;../upload/tugas/1778494707_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\edit_tugas.php on line 49
+[11-May-2026 12:19:16 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778494756_1778492757_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 12:19:16 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php135B.tmp&quot; to &quot;../upload/tugas/1778494756_1778492757_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 12:29:38 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778495378_1778491816_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 12:29:38 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\php9273.tmp&quot; to &quot;../upload/tugas/1778495378_1778491816_1767967444_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 218
+[11-May-2026 12:37:55 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:360
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(360): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 360
+[11-May-2026 12:38:38 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:360
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(360): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 360
+[11-May-2026 12:41:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 12:41:25 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:93
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(93): mysqli_query(Object(mysqli), 'SELECT * FROM p...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 93
+[11-May-2026 12:48:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 12:52:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_tugas' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:61
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(61): mysqli_query(Object(mysqli), '\r\n            I...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 61
+[11-May-2026 12:52:17 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 12:52:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 12:57:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 12:57:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id_tugas' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:61
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(61): mysqli_query(Object(mysqli), '\r\n            I...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 61
+[11-May-2026 13:00:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:07:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:07:27 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:27 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:07:47 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:47 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:51 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:51 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:54 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:54 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:07:57 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:08:59 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:09:01 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:09:01 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:09:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:14:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:14:26 Europe/Berlin] PHP Warning:  Undefined array key "waktu_kumpul" in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:14:26 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 299
+[11-May-2026 13:14:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 13:14:58 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:55
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(55): mysqli_query(Object(mysqli), 'INSERT INTO pen...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 55
+[11-May-2026 13:15:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:55
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(55): mysqli_query(Object(mysqli), 'INSERT INTO pen...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 55
+[11-May-2026 15:32:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:55
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(55): mysqli_query(Object(mysqli), 'INSERT INTO pen...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 55
+[11-May-2026 15:32:36 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:33:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:55
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(55): mysqli_query(Object(mysqli), 'INSERT INTO pen...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 55
+[11-May-2026 15:35:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'waktu_kumpul' in 'field list' in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php:49
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php(49): mysqli_query(Object(mysqli), 'INSERT INTO pen...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 49
+[11-May-2026 15:35:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:35:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:35:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:40:01 Europe/Berlin] PHP Warning:  move_uploaded_file(../upload/tugas/1778506801_6_1767967564_HANYA_UNTUK_UJI_COBA_SAJA.docx): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 46
+[11-May-2026 15:40:01 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;C:\xampp\tmp\phpE07F.tmp&quot; to &quot;../upload/tugas/1778506801_6_1767967564_HANYA_UNTUK_UJI_COBA_SAJA.docx&quot; in C:\xampp\htdocs\elearning\mahasiswa\u_tugas.php on line 46
+[11-May-2026 15:40:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:40:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:37 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:38 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:38 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:38 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:38 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 15:48:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:02:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\dosen\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\elearning\dosen\index.php(6): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\dosen\index.php on line 6
+[11-May-2026 16:02:04 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\dosen\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\elearning\dosen\index.php(6): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\dosen\index.php on line 6
+[11-May-2026 16:02:25 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\dosen\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\elearning\dosen\index.php(6): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\dosen\index.php on line 6
+[11-May-2026 16:02:27 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'elearning.mahasiswa' doesn't exist in C:\xampp\htdocs\elearning\dosen\index.php:6
+Stack trace:
+#0 C:\xampp\htdocs\elearning\dosen\index.php(6): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\dosen\index.php on line 6
+[11-May-2026 16:12:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:13:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:14:18 Europe/Berlin] PHP Warning:  Undefined array key "nama_matkul" in C:\xampp\htdocs\elearning\dosen\pengumpulan_tugas.php on line 156
+[11-May-2026 16:14:45 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:18:48 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:31:54 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:429
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(429): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 429
+[11-May-2026 16:31:57 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:429
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(429): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 429
+[11-May-2026 16:32:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:429
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(429): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 429
+[11-May-2026 16:33:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:429
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(429): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 429
+[11-May-2026 16:33:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\n             ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:19 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:35:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_mahasiswa' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:37:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_tugas' in 'on clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:37:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_tugas' in 'on clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:37:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_tugas' in 'on clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:37:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.id_tugas' in 'on clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 16:40:42 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.mahasiswa_id' in 'where clause' in C:\xampp\htdocs\elearning\mahasiswa\tugas.php:358
+Stack trace:
+#0 C:\xampp\htdocs\elearning\mahasiswa\tugas.php(358): mysqli_query(Object(mysqli), '\r\nSELECT \r\n    ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\elearning\mahasiswa\tugas.php on line 358
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:07:40 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:40 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:07:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\elearning\fungsi.php:108
+Stack trace:
+#0 C:\xampp\htdocs\elearning\fungsi.php(108): mysqli_query(Object(mysqli), '\r\n        INSER...')
+#1 C:\xampp\htdocs\elearning\login.php(24): tambahAktivitas(Object(mysqli), '5', 'Dr. Haji Zacn S...', 'dosen', 'Login ke sistem')
+#2 {main}
+  thrown in C:\xampp\htdocs\elearning\fungsi.php on line 108
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "nama" in C:\xampp\htdocs\elearning\admin\index.php on line 279
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "role" in C:\xampp\htdocs\elearning\admin\index.php on line 280
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "aktivitas" in C:\xampp\htdocs\elearning\admin\index.php on line 282
+[11-May-2026 17:08:24 Europe/Berlin] PHP Warning:  Undefined array key "created_at" in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:24 Europe/Berlin] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\elearning\admin\index.php on line 285
+[11-May-2026 17:08:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\elearning\fungsi.php:108
+Stack trace:
+#0 C:\xampp\htdocs\elearning\fungsi.php(108): mysqli_query(Object(mysqli), '\r\n        INSER...')
+#1 C:\xampp\htdocs\elearning\login.php(24): tambahAktivitas(Object(mysqli), '5', 'Dr. Haji Zacn S...', 'dosen', 'Login ke sistem')
+#2 {main}
+  thrown in C:\xampp\htdocs\elearning\fungsi.php on line 108
+[11-May-2026 17:10:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\elearning\fungsi.php:108
+Stack trace:
+#0 C:\xampp\htdocs\elearning\fungsi.php(108): mysqli_query(Object(mysqli), '\r\n        INSER...')
+#1 C:\xampp\htdocs\elearning\login.php(26): tambahAktivitas(Object(mysqli), '5', 'Dr. Haji Zacn S...', 'dosen', 'Login ke sistem')
+#2 {main}
+  thrown in C:\xampp\htdocs\elearning\fungsi.php on line 108
+[11-May-2026 17:10:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\elearning\fungsi.php:108
+Stack trace:
+#0 C:\xampp\htdocs\elearning\fungsi.php(108): mysqli_query(Object(mysqli), '\r\n        INSER...')
+#1 C:\xampp\htdocs\elearning\login.php(26): tambahAktivitas(Object(mysqli), '1', 'Admin', 'admin', 'Login ke sistem')
+#2 {main}
+  thrown in C:\xampp\htdocs\elearning\fungsi.php on line 108
+[11-May-2026 17:10:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\elearning\fungsi.php:108
+Stack trace:
+#0 C:\xampp\htdocs\elearning\fungsi.php(108): mysqli_query(Object(mysqli), '\r\n        INSER...')
+#1 C:\xampp\htdocs\elearning\login.php(26): tambahAktivitas(Object(mysqli), '1', 'Admin', 'admin', 'Login ke sistem')
+#2 {main}
+  thrown in C:\xampp\htdocs\elearning\fungsi.php on line 108
+[12-May-2026 10:26:23 Europe/Berlin] PHP Warning:  include(../footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\pembayaran.php on line 123
+[12-May-2026 10:26:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\elearning\mahasiswa\pembayaran.php on line 123
+[12-May-2026 10:26:59 Europe/Berlin] PHP Warning:  include(../footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\elearning\mahasiswa\pembayaran.php on line 123
+[12-May-2026 10:26:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\elearning\mahasiswa\pembayaran.php on line 123
