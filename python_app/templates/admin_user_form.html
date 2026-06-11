@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>{{ 'Edit User' if user_data else 'Tambah User' }}</h1>
+    <div class="dashboard-section">
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" name="nama" class="form-control" value="{{ user_data.nama if user_data else '' }}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" value="{{ user_data.username if user_data else '' }}" required>
+            </div>
+            {% if not user_data %}
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            {% endif %}
+            <div class="mb-3">
+                <label class="form-label">Role</label>
+                <select name="role" class="form-control" required>
+                    <option value="">-- Pilih Role --</option>
+                    <option value="admin" {% if user_data and user_data.role == 'admin' %}selected{% endif %}>Admin</option>
+                    <option value="dosen" {% if user_data and user_data.role == 'dosen' %}selected{% endif %}>Dosen</option>
+                    <option value="mahasiswa" {% if user_data and user_data.role == 'mahasiswa' %}selected{% endif %}>Mahasiswa</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Prodi</label>
+                <select name="prodi" class="form-control">
+                    <option value="">-- Pilih Prodi --</option>
+                    {% for item in prodi %}
+                    <option value="{{ item.id }}" {% if user_data and user_data.prodi_id == item.id %}selected{% endif %}>{{ item.nama_prodi }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mata Kuliah</label>
+                <select name="matkul" class="form-control">
+                    <option value="">-- Pilih Matkul --</option>
+                    {% for item in matkul %}
+                    <option value="{{ item.id }}" {% if user_data and user_data.matkul_id == item.id %}selected{% endif %}>{{ item.nama_matkul }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Umur</label>
+                <input type="number" name="umur" class="form-control" value="{{ user_data.umur if user_data else '' }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">No HP</label>
+                <input type="text" name="no_hp" class="form-control" value="{{ user_data.no_hp if user_data else '' }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Agama</label>
+                <input type="text" name="agama" class="form-control" value="{{ user_data.agama if user_data else '' }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <textarea name="alamat" class="form-control" rows="3">{{ user_data.alamat if user_data else '' }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">NISN</label>
+                <input type="text" name="nisn" class="form-control" value="{{ user_data.nisn if user_data else '' }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">NIDN</label>
+                <input type="text" name="nidn" class="form-control" value="{{ user_data.nidn if user_data else '' }}">
+            </div>
+            <button class="btn btn-primary" type="submit">Simpan</button>
+            <a href="{{ url_for('admin_users') }}" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

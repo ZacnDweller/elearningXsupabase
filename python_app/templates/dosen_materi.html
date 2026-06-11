@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Upload Materi</h1>
+    <div class="dashboard-section">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Judul Materi</label>
+                <input type="text" name="judul" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">File Materi</label>
+                <input type="file" name="file" class="form-control" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Upload</button>
+        </form>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Daftar Materi</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>File</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in materi %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ item.judul }}</td>
+                        <td>
+                            {% if item.file %}
+                            <a href="{{ url_for('download_file', filename='materi/' ~ item.file) }}" class="btn btn-sm btn-success">⬇ Download</a>
+                            {% else %}-{% endif %}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="3" class="text-center">Belum ada materi.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

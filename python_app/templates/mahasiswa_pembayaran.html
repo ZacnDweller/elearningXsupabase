@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Pembayaran</h1>
+    <div class="dashboard-section">
+        <h2>Ajukan Pembayaran</h2>
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Jumlah (Rp)</label>
+                    <input type="number" name="amount" class="form-control" step="0.01" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Metode Pembayaran</label>
+                    <select name="payment_method" class="form-control" required>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="E-Wallet">E-Wallet</option>
+                        <option value="Kartu Kredit">Kartu Kredit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Deskripsi</label>
+                <textarea name="description" class="form-control" rows="2" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">ID Transaksi</label>
+                <input type="text" name="transaction_id" class="form-control" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Ajukan Pembayaran</button>
+        </form>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Riwayat Pembayaran</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Jumlah</th>
+                        <th>Status</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in payments %}
+                    <tr>
+                        <td>{{ item.payment_date }}</td>
+                        <td>Rp {{ '%.2f' | format(item.amount) }}</td>
+                        <td>{{ item.status }}</td>
+                        <td>{{ item.description }}</td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="4" class="text-center">Belum ada riwayat pembayaran.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

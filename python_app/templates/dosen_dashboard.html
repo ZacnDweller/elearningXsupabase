@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1>Dashboard Dosen</h1>
+        <p>Login sebagai <strong>{{ nama }}</strong></p>
+    </div>
+
+    <div class="dashboard-cards">
+        <div class="card-box bg-primary text-white">
+            <h3>Materi</h3>
+            <p class="large-number">{{ materi_count }}</p>
+        </div>
+        <div class="card-box bg-success text-white">
+            <h3>Tugas</h3>
+            <p class="large-number">{{ tugas_count }}</p>
+        </div>
+        <div class="card-box bg-warning text-dark">
+            <h3>Presensi</h3>
+            <p class="large-number">{{ presensi_status }}</p>
+        </div>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Menu Cepat</h2>
+        <div class="button-row">
+            <a class="btn btn-primary" href="#">Upload Materi</a>
+            <a class="btn btn-success" href="#">Kelola Tugas</a>
+            <a class="btn btn-warning text-dark" href="#">Presensi</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

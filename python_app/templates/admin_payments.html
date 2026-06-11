@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Kelola Pembayaran</h1>
+
+    <div class="dashboard-section">
+        <h2>Tambah Permintaan Pembayaran</h2>
+        <form method="post">
+            <input type="hidden" name="form_type" value="create_payment">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Mahasiswa</label>
+                    <select name="student_id" class="form-control" required>
+                        <option value="">Pilih Mahasiswa</option>
+                        {% for student in students %}
+                        <option value="{{ student.id }}">{{ student.nama }} ({{ student.username }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Jumlah (Rp)</label>
+                    <input type="number" name="amount" class="form-control" step="0.01" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Deskripsi</label>
+                <textarea name="description" class="form-control" rows="2" required></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Metode Pembayaran</label>
+                    <select name="payment_method" class="form-control" required>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="E-Wallet">E-Wallet</option>
+                        <option value="Kartu Kredit">Kartu Kredit</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">ID Transaksi</label>
+                    <input type="text" name="transaction_id" class="form-control" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Tambah Pembayaran</button>
+        </form>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Daftar Pembayaran</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Mahasiswa</th>
+                        <th>Jumlah</th>
+                        <th>Status</th>
+                        <th>Metode</th>
+                        <th>Transaksi</th>
+                        <th>Tanggal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for payment in payments %}
+                    <tr>
+                        <td>{{ payment.id }}</td>
+                        <td>{{ payment.student_id }}</td>
+                        <td>Rp {{ '%.2f' | format(payment.amount) }}</td>
+                        <td>{{ payment.status }}</td>
+                        <td>{{ payment.payment_method }}</td>
+                        <td>{{ payment.transaction_id }}</td>
+                        <td>{{ payment.payment_date }}</td>
+                        <td>
+                            {% if payment.status == 'pending' %}
+                            <form method="post" style="display:inline-block; margin-right:8px;">
+                                <input type="hidden" name="payment_id" value="{{ payment.id }}">
+                                <input type="hidden" name="action" value="confirm">
+                                <button type="submit" class="btn btn-sm btn-success">Konfirmasi</button>
+                            </form>
+                            <form method="post" style="display:inline-block;">
+                                <input type="hidden" name="payment_id" value="{{ payment.id }}">
+                                <input type="hidden" name="action" value="reject">
+                                <button type="submit" class="btn btn-sm btn-danger">Tolak</button>
+                            </form>
+                            {% else %}
+                                {{ payment.status | capitalize }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="8" class="text-center">Belum ada pembayaran.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

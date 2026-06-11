@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Kumpulkan Tugas</h1>
+    <div class="dashboard-section">
+        <h2>{{ task.judul }}</h2>
+        <p>{{ task.deskripsi or 'Tidak ada deskripsi' }}</p>
+        <p><strong>Deadline:</strong> {{ task.deadline or '-' }}</p>
+
+        {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+
+        {% if submitted %}
+            <div class="alert alert-success">
+                Anda sudah mengumpulkan tugas ini.<br>
+                File: {{ submitted.file }}<br>
+                Tanggal: {{ submitted.tanggal }}
+            </div>
+        {% else %}
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label">Pilih File</label>
+                    <input type="file" name="file" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Tugas</button>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

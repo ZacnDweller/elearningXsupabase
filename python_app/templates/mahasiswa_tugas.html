@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Daftar Tugas</h1>
+    <div class="dashboard-section">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in tugas %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ item.judul }}</td>
+                        <td>{{ item.deadline or '-' }}</td>
+                        <td>
+                            {% if item.id in submitted_map %}
+                                Sudah dikumpulkan
+                            {% else %}
+                                Belum dikumpulkan
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{{ url_for('mahasiswa_tugas_submit', tugas_id=item.id) }}" class="btn btn-sm btn-primary">Kumpulkan</a>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="5" class="text-center">Belum ada tugas untuk matkul Anda.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

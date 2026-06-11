@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Edit Tugas</h1>
+    <div class="dashboard-section">
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Judul Tugas</label>
+                <input type="text" name="judul" class="form-control" value="{{ task.judul }}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Deskripsi</label>
+                <textarea name="deskripsi" class="form-control" rows="3">{{ task.deskripsi }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Deadline</label>
+                <input type="date" name="deadline" class="form-control" value="{{ task.deadline }}">
+            </div>
+            <button class="btn btn-primary" type="submit">Simpan Perubahan</button>
+            <a href="{{ url_for('dosen_tugas') }}" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

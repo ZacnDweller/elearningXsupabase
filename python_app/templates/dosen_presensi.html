@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Presensi</h1>
+    <div class="dashboard-section">
+        {% if presensi_open %}
+            <div class="alert alert-success">
+                Presensi dibuka pada {{ presensi_open.tanggal }}.
+            </div>
+            <form method="post">
+                <button class="btn btn-danger" name="tutup">Tutup Presensi</button>
+            </form>
+        {% else %}
+            <div class="alert alert-warning">Presensi belum dibuka untuk mata kuliah Anda.</div>
+            <form method="post">
+                <button class="btn btn-success" name="buka">Buka Presensi</button>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

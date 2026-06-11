@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Manajemen User</h1>
+    <div class="dashboard-section">
+        <a href="{{ url_for('admin_user_add') }}" class="btn btn-primary">➕ Tambah Akun</a>
+    </div>
+
+    <div class="dashboard-section">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Prodi</th>
+                        <th>Matkul</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in users %}
+                        <tr>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.nama }}</td>
+                            <td>{{ item.username }}</td>
+                            <td>{{ item.role }}</td>
+                            <td>{{ prodi[item.prodi_id] if item.prodi_id else '-' }}</td>
+                            <td>{{ matkul[item.matkul_id] if item.matkul_id else '-' }}</td>
+                            <td>
+                                <a href="{{ url_for('admin_user_edit', user_id=item.id) }}" class="btn btn-sm btn-primary">Edit</a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="7" class="text-center">Belum ada user.</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

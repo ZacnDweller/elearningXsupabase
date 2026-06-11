@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Presensi</h1>
+    <div class="dashboard-section">
+        <p>Nama: <strong>{{ nama }}</strong></p>
+        {% if presensi %}
+            {% if submitted %}
+                <div class="alert alert-success">
+                    Anda telah memilih: <strong>{{ submitted.keterangan | capitalize }}</strong>
+                </div>
+            {% else %}
+                <div class="alert alert-info">
+                    Presensi dibuka pada tanggal {{ presensi.tanggal }}.
+                </div>
+                <form method="post">
+                    <button name="hadir" class="btn btn-success me-2">✔ Hadir</button>
+                    <button name="sakit" class="btn btn-warning me-2">🤒 Sakit</button>
+                    <button name="izin" class="btn btn-secondary">📝 Izin</button>
+                </form>
+            {% endif %}
+        {% else %}
+            <div class="alert alert-danger">Presensi belum dibuka untuk matkul Anda.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

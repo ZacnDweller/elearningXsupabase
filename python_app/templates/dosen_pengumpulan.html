@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Pengumpulan Tugas</h1>
+    <div class="dashboard-section">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Mahasiswa</th>
+                        <th>Judul Tugas</th>
+                        <th>File</th>
+                        <th>Tanggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in pengumpulan %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ item.mahasiswa }}</td>
+                        <td>{{ tugas_data[item.tugas_id] if item.tugas_id in tugas_data else '-' }}</td>
+                        <td>
+                            {% if item.file %}
+                            <a href="{{ url_for('download_file', filename='tugas/' ~ item.file) }}" class="btn btn-sm btn-success">⬇ Download</a>
+                            {% else %}-{% endif %}
+                        </td>
+                        <td>{{ item.tanggal }}</td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="5" class="text-center">Belum ada pengumpulan tugas.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

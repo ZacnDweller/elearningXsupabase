@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ website_settings.nama_website if website_settings else 'E-Learning' }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<nav class="navbar-custom">
+    <div class="navbar-brand">{{ website_settings.nama_website if website_settings else 'E-Learning' }}</div>
+    {% if session.user %}
+    <div class="navbar-links">
+        <span>Login sebagai <strong>{{ session.user.nama }}</strong></span>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+    {% endif %}
+</nav>
+{% if session.user %}
+<div class="page-menu">
+    <a href="{{ url_for(session.user.role) }}">Dashboard</a>
+    {% if session.user.role == 'admin' %}
+        <a href="{{ url_for('admin_users') }}">Users</a>
+        <a href="{{ url_for('admin_payments') }}">Pembayaran</a>
+    {% elif session.user.role == 'dosen' %}
+        <a href="{{ url_for('dosen_materi') }}">Materi</a>
+        <a href="{{ url_for('dosen_tugas') }}">Tugas</a>
+        <a href="{{ url_for('dosen_presensi') }}">Presensi</a>
+        <a href="{{ url_for('dosen_pengumpulan') }}">Pengumpulan</a>
+    {% elif session.user.role == 'mahasiswa' %}
+        <a href="{{ url_for('mahasiswa_materi') }}">Materi</a>
+        <a href="{{ url_for('mahasiswa_tugas') }}">Tugas</a>
+        <a href="{{ url_for('mahasiswa_presensi') }}">Presensi</a>
+        <a href="{{ url_for('mahasiswa_payments') }}">Pembayaran</a>
+    {% endif %}
+</div>
+{% endif %}
+<div class="page-container">
+    {% block content %}{% endblock %}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1>Dashboard Admin</h1>
+        <p>Selamat datang, <strong>{{ nama }}</strong></p>
+    </div>
+
+    <div class="dashboard-cards">
+        <div class="card-box bg-primary text-white">
+            <h3>Admin</h3>
+            <p class="large-number">{{ admin_count }}</p>
+        </div>
+        <div class="card-box bg-success text-white">
+            <h3>Dosen</h3>
+            <p class="large-number">{{ dosen_count }}</p>
+        </div>
+        <div class="card-box bg-warning text-dark">
+            <h3>Mahasiswa</h3>
+            <p class="large-number">{{ mahasiswa_count }}</p>
+        </div>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Aktivitas Terbaru</h2>
+        <div class="activity-list">
+            {% if activities %}
+                {% for item in activities %}
+                    <div class="activity-item">
+                        <div>{{ item.aktivitas }}</div>
+                        <div class="activity-meta">{{ item.nama }} • {{ item.role }} • {{ item.created_at }}</div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-muted">Belum ada aktivitas.</div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Statistik Pendaftaran Mahasiswa</h2>
+        {% if mahasiswa_labels %}
+            <div class="chart-placeholder">
+                <div><strong>Bulan:</strong> {{ mahasiswa_labels | join(', ') }}</div>
+                <div><strong>Total:</strong> {{ mahasiswa_totals | join(', ') }}</div>
+            </div>
+        {% else %}
+            <div class="text-muted">Belum ada data pendaftaran mahasiswa.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
