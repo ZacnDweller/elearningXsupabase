@@ -17,11 +17,55 @@
     </div>
     {% endif %}
 </nav>
+<div class="container mt-3">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ 'success' if category == 'success' else 'danger' if category == 'danger' else 'warning' if category == 'warning' else 'info' }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+{% if campus_ad %}
+<div class="campus-ad-banner">
+    {% if campus_ad.html_content %}
+        <div class="campus-ad__card campus-ad__card--with-button">
+            <div class="campus-ad__card-content">
+                {{ campus_ad.html_content | safe }}
+            </div>
+            {% if campus_ad.link %}
+                <div class="campus-ad__button-wrap">
+                    <a href="{{ campus_ad.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">{{ campus_ad.button_text or 'Buka Link' }}</a>
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="campus-ad__card campus-ad__card--with-button">
+            {% if campus_ad.image_url %}
+                <img src="{{ campus_ad.image_url }}" alt="{{ campus_ad.title }}" class="campus-ad__image">
+            {% endif %}
+            <div class="campus-ad__card-content">
+                <h5>{{ campus_ad.title }}</h5>
+                <p>{{ campus_ad.description }}</p>
+            </div>
+            {% if campus_ad.link %}
+                <div class="campus-ad__button-wrap">
+                    <a href="{{ campus_ad.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">{{ campus_ad.button_text or 'Buka Link' }}</a>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endif %}
 {% if session.user %}
 <div class="page-menu">
     <a href="{{ url_for(session.user.role) }}">Dashboard</a>
     {% if session.user.role == 'admin' %}
         <a href="{{ url_for('admin_users') }}">Users</a>
+        <a href="{{ url_for('admin_ads') }}">Iklan</a>
         <a href="{{ url_for('admin_payments') }}">Pembayaran</a>
     {% elif session.user.role == 'dosen' %}
         <a href="{{ url_for('dosen_materi') }}">Materi</a>

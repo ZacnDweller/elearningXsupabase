@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Pilih Mata Kuliah</h1>
+    <div class="dashboard-section">
+        <p>Silakan pilih mata kuliah yang ingin Anda gunakan. Prodi akan terisi otomatis berdasarkan mata kuliah yang dipilih.</p>
+
+        {% if matkul %}
+        <div class="row mb-4" id="matkulList">
+            {% for item in matkul %}
+            <div class="col-md-4 mb-3">
+                <div class="card matkul-card" data-matkul-id="{{ item.id }}" data-prodi-id="{{ item.prodi_id }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.nama_matkul }}</h5>
+                        <p class="card-text text-muted">Prodi: {{ prodi_map[item.prodi_id] if item.prodi_id in prodi_map else 'Tidak diketahui' }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-warning">Belum ada mata kuliah tersedia. Hubungi admin untuk menambahkan mata kuliah terlebih dahulu.</div>
+        {% endif %}
+
+        <form method="post" id="selectionForm">
+            <input type="hidden" name="matkul" id="matkulInput" value="{{ selected_matkul or '' }}">
+            <button class="btn btn-primary" type="submit" id="confirmButton" disabled>Masuk Dashboard</button>
+        </form>
+    </div>
+</div>
+<style>
+    .matkul-card {
+        cursor: pointer;
+        transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .matkul-card:hover {
+        transform: translateY(-2px);
+    }
+    .matkul-card.selected {
+        border: 2px solid #0d6efd;
+        background: #e7f1ff;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const matkulCards = document.querySelectorAll('.matkul-card');
+        const matkulInput = document.getElementById('matkulInput');
+        const confirmButton = document.getElementById('confirmButton');
+
+        function clearSelection(cards) {
+            cards.forEach(card => card.classList.remove('selected'));
+        }
+
+        function updateConfirmState() {
+            confirmButton.disabled = !matkulInput.value;
+        }
+
+        matkulCards.forEach(card => {
+            card.addEventListener('click', function () {
+                clearSelection(matkulCards);
+                card.classList.add('selected');
+                matkulInput.value = card.dataset.matkulId;
+                updateConfirmState();
+            });
+        });
+
+        if (matkulInput.value) {
+            const selectedMatkulCard = Array.from(matkulCards).find(card => String(card.dataset.matkulId) === String(matkulInput.value));
+            if (selectedMatkulCard) {
+                selectedMatkulCard.classList.add('selected');
+            }
+        }
+
+        updateConfirmState();
+    });
+</script>
+{% endblock %}

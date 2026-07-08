@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "0192023a7bbd73250516f069df18b500",
+    "nama": "Administrator",
+    "role": "admin",
+    "prodi_id": null,
+    "matkul_id": null
+  },
+  {
+    "id": 2,
+    "username": "dosen",
+    "password": "d5bbfb47ac3160c31fa8c247827115aa",
+    "nama": "Dosen Pembimbing",
+    "role": "dosen",
+    "prodi_id": 1,
+    "matkul_id": 1
+  },
+  {
+    "id": 3,
+    "username": "mahasiswa",
+    "password": "b398b8a18ef4f69811a32cf169946bac",
+    "nama": "Mahasiswa Aktif",
+    "role": "mahasiswa",
+    "prodi_id": 1,
+    "matkul_id": 1
+  }
+]

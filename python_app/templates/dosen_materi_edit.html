@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <h1>Edit Materi</h1>
+    <div class="dashboard-section">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Judul Materi</label>
+                <input type="text" name="judul" class="form-control" value="{{ materi.judul }}" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">File Materi Baru (opsional)</label>
+                <input type="file" name="file" class="form-control">
+            </div>
+            <button class="btn btn-primary" type="submit">Simpan Perubahan</button>
+            <a href="{{ url_for('dosen_materi') }}" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

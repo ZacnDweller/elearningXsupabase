@@ -64,7 +64,7 @@
                     {% for payment in payments %}
                     <tr>
                         <td>{{ payment.id }}</td>
-                        <td>{{ payment.student_id }}</td>
+                        <td>{{ payment.student_name or payment.student_id }}</td>
                         <td>Rp {{ '%.2f' | format(payment.amount) }}</td>
                         <td>{{ payment.status }}</td>
                         <td>{{ payment.payment_method }}</td>

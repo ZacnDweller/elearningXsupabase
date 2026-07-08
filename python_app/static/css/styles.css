@@ -55,6 +55,60 @@ body {
     padding: 24px;
 }
 
+.campus-ad-banner {
+    padding: 16px 24px 0;
+}
+
+.campus-ad__card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 8px 24px rgba(79, 115, 223, 0.12);
+}
+
+.campus-ad__card--with-button {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.campus-ad__card-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.campus-ad__button-wrap {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: auto;
+}
+
+.campus-ad__card h5 {
+    margin: 0 0 6px;
+    color: var(--primary);
+}
+
+.campus-ad__card p {
+    margin: 0 0 8px;
+    color: #475569;
+}
+
+.campus-ad__card a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.campus-ad__image {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
 .login-page {
     min-height: calc(100vh - 86px);
     display: flex;

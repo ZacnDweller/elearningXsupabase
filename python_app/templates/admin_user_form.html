@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+﻿{% extends 'base.html' %}
 {% block content %}
 <div class="dashboard-container">
     <h1>{{ 'Edit User' if user_data else 'Tambah User' }}</h1>
@@ -28,22 +28,35 @@
                 </select>
             </div>
             <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" value="{{ user_data.email if user_data and user_data.email else '' }}" required>
+            </div>
+            <div class="mb-3" id="prodiField">
                 <label class="form-label">Prodi</label>
-                <select name="prodi" class="form-control">
+                <select name="prodi" id="prodiSelect" class="form-control">
                     <option value="">-- Pilih Prodi --</option>
-                    {% for item in prodi %}
-                    <option value="{{ item.id }}" {% if user_data and user_data.prodi_id == item.id %}selected{% endif %}>{{ item.nama_prodi }}</option>
-                    {% endfor %}
+                    {% if prodi %}
+                        {% for item in prodi %}
+                        <option value="{{ item.id }}" {% if user_data and (user_data.prodi_id|string) == (item.id|string) %}selected{% endif %}>{{ item.nama_prodi }}</option>
+                        {% endfor %}
+                    {% else %}
+                        <option value="" disabled>Tidak ada prodi tersedia</option>
+                    {% endif %}
                 </select>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" id="matkulField">
                 <label class="form-label">Mata Kuliah</label>
-                <select name="matkul" class="form-control">
+                <select name="matkul" id="matkulSelect" class="form-control">
                     <option value="">-- Pilih Matkul --</option>
-                    {% for item in matkul %}
-                    <option value="{{ item.id }}" {% if user_data and user_data.matkul_id == item.id %}selected{% endif %}>{{ item.nama_matkul }}</option>
-                    {% endfor %}
+                    {% if matkul %}
+                        {% for item in matkul %}
+                        <option value="{{ item.id }}" data-prodi="{{ item.prodi_id }}" {% if user_data and (user_data.matkul_id|string) == (item.id|string) %}selected{% endif %}>{{ item.nama_matkul }}</option>
+                        {% endfor %}
+                    {% else %}
+                        <option value="" disabled>Tidak ada matkul tersedia</option>
+                    {% endif %}
                 </select>
+                <div class="form-text text-muted">Pilih mata kuliah sesuai Prodi yang dipilih.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label">Umur</label>
@@ -55,17 +68,26 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Agama</label>
-                <input type="text" name="agama" class="form-control" value="{{ user_data.agama if user_data else '' }}">
+                <select name="agama" class="form-control">
+                    <option value="">-- Pilih Agama --</option>
+                    <option value="Islam" {% if user_data and user_data.agama == 'Islam' %}selected{% endif %}>Islam</option>
+                    <option value="Kristen" {% if user_data and user_data.agama == 'Kristen' %}selected{% endif %}>Kristen</option>
+                    <option value="Katolik" {% if user_data and user_data.agama == 'Katolik' %}selected{% endif %}>Katolik</option>
+                    <option value="Hindu" {% if user_data and user_data.agama == 'Hindu' %}selected{% endif %}>Hindu</option>
+                    <option value="Buddha" {% if user_data and user_data.agama == 'Buddha' %}selected{% endif %}>Buddha</option>
+                    <option value="Khonghucu" {% if user_data and user_data.agama == 'Khonghucu' %}selected{% endif %}>Khonghucu</option>
+                    <option value="Lainnya" {% if user_data and user_data.agama == 'Lainnya' %}selected{% endif %}>Lainnya</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label class="form-label">Alamat</label>
                 <textarea name="alamat" class="form-control" rows="3">{{ user_data.alamat if user_data else '' }}</textarea>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" id="nisnField">
                 <label class="form-label">NISN</label>
                 <input type="text" name="nisn" class="form-control" value="{{ user_data.nisn if user_data else '' }}">
             </div>
-            <div class="mb-3">
+            <div class="mb-3" id="nidnField">
                 <label class="form-label">NIDN</label>
                 <input type="text" name="nidn" class="form-control" value="{{ user_data.nidn if user_data else '' }}">
             </div>
@@ -73,5 +95,112 @@
             <a href="{{ url_for('admin_users') }}" class="btn btn-secondary">Batal</a>
         </form>
     </div>
-</div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const prodiSelect = document.getElementById('prodiSelect');
+        const matkulSelect = document.getElementById('matkulSelect');
+
+        if (!prodiSelect || !matkulSelect) return;
+
+        const originalMatkulOptions = Array.from(matkulSelect.querySelectorAll('option')).map(opt => ({
+            value: opt.value,
+            text: opt.textContent,
+            prodi: opt.dataset.prodi || ''
+        }));
+
+        function filterMatkul() {
+            const selectedProdi = prodiSelect.value;
+            const currentMatkul = matkulSelect.value;
+
+            matkulSelect.innerHTML = '';
+            const placeholder = document.createElement('option');
+            placeholder.value = '';
+            placeholder.textContent = '-- Pilih Matkul --';
+            matkulSelect.appendChild(placeholder);
+
+            const filtered = originalMatkulOptions.filter(opt => opt.value && (!selectedProdi || String(opt.prodi) === String(selectedProdi)));
+            if (filtered.length === 0) {
+                const emptyOption = document.createElement('option');
+                emptyOption.value = '';
+                emptyOption.textContent = 'Tidak ada matkul tersedia untuk Prodi ini';
+                emptyOption.disabled = true;
+                matkulSelect.appendChild(emptyOption);
+                return;
+            }
+
+            filtered.forEach(opt => {
+                const option = document.createElement('option');
+                option.value = opt.value;
+                option.textContent = opt.text;
+                if (String(opt.value) === String(currentMatkul)) {
+                    option.selected = true;
+                }
+                matkulSelect.appendChild(option);
+            });
+        }
+
+        const roleSelect = document.querySelector('select[name="role"]');
+        const prodiField = document.getElementById('prodiField');
+        const matkulField = document.getElementById('matkulField');
+        const nisnField = document.getElementById('nisnField');
+        const nidnField = document.getElementById('nidnField');
+
+        function updateFieldsForRole() {
+            const roleValue = roleSelect ? roleSelect.value : '';
+            if (roleValue === 'admin') {
+                prodiField.style.display = 'none';
+                matkulField.style.display = 'none';
+                nisnField.style.display = 'none';
+                nidnField.style.display = 'none';
+                prodiSelect.disabled = true;
+                matkulSelect.disabled = true;
+                prodiSelect.value = '';
+                matkulSelect.value = '';
+                nisnField.querySelector('input').disabled = true;
+                nidnField.querySelector('input').disabled = true;
+            } else if (roleValue === 'dosen') {
+                prodiField.style.display = 'block';
+                matkulField.style.display = 'block';
+                nisnField.style.display = 'none';
+                nidnField.style.display = 'block';
+                prodiSelect.disabled = false;
+                matkulSelect.disabled = false;
+                nisnField.querySelector('input').disabled = true;
+                nidnField.querySelector('input').disabled = false;
+            } else if (roleValue === 'mahasiswa') {
+                prodiField.style.display = 'block';
+                matkulField.style.display = 'none';
+                nisnField.style.display = 'block';
+                nidnField.style.display = 'none';
+                prodiSelect.disabled = false;
+                matkulSelect.disabled = true;
+                matkulSelect.value = '';
+                nisnField.querySelector('input').disabled = false;
+                nidnField.querySelector('input').disabled = true;
+            } else {
+                prodiField.style.display = 'block';
+                matkulField.style.display = 'block';
+                nisnField.style.display = 'block';
+                nidnField.style.display = 'block';
+                prodiSelect.disabled = false;
+                matkulSelect.disabled = false;
+                nisnField.querySelector('input').disabled = false;
+                nidnField.querySelector('input').disabled = false;
+            }
+        }
+
+        if (roleSelect) {
+            roleSelect.addEventListener('change', function () {
+                updateFieldsForRole();
+                filterMatkul();
+            });
+        }
+
+        prodiSelect.addEventListener('change', filterMatkul);
+        updateFieldsForRole();
+        filterMatkul();
+    });
+    </script>
 {% endblock %}
+

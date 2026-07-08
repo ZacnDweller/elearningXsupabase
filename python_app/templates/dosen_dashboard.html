@@ -24,9 +24,9 @@
     <div class="dashboard-section">
         <h2>Menu Cepat</h2>
         <div class="button-row">
-            <a class="btn btn-primary" href="#">Upload Materi</a>
-            <a class="btn btn-success" href="#">Kelola Tugas</a>
-            <a class="btn btn-warning text-dark" href="#">Presensi</a>
+            <a class="btn btn-primary" href="{{ url_for('dosen_materi') }}">Upload Materi</a>
+            <a class="btn btn-success" href="{{ url_for('dosen_tugas') }}">Kelola Tugas</a>
+            <a class="btn btn-warning text-dark" href="{{ url_for('dosen_presensi') }}">Presensi</a>
         </div>
     </div>
 </div>

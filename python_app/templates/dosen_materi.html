@@ -25,6 +25,7 @@
                         <th>No</th>
                         <th>Judul</th>
                         <th>File</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,12 @@
                             {% if item.file %}
                             <a href="{{ url_for('download_file', filename='materi/' ~ item.file) }}" class="btn btn-sm btn-success">⬇ Download</a>
                             {% else %}-{% endif %}
+                        </td>
+                        <td>
+                            <a href="{{ url_for('dosen_materi_edit', materi_id=item.id) }}" class="btn btn-sm btn-primary">Edit</a>
+                            <form action="{{ url_for('dosen_materi_delete', materi_id=item.id) }}" method="post" style="display:inline-block; margin-left: 4px;">
+                                <button class="btn btn-sm btn-danger" type="submit">Hapus</button>
+                            </form>
                         </td>
                     </tr>
                     {% else %}

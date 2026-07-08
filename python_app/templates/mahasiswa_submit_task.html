@@ -15,7 +15,17 @@
             <div class="alert alert-success">
                 Anda sudah mengumpulkan tugas ini.<br>
                 File: {{ submitted.file }}<br>
-                Tanggal: {{ submitted.tanggal }}
+                Tanggal: {{ submitted.submitted_at }}
+            </div>
+            <div class="mt-3">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label class="form-label">Pilih File Baru</label>
+                        <input type="file" name="file" class="form-control">
+                    </div>
+                    <button type="submit" name="action" value="edit" class="btn btn-primary">Ubah Pengumpulan</button>
+                    <button type="submit" name="action" value="delete" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus pengumpulan ini?');">Hapus Pengumpulan</button>
+                </form>
             </div>
         {% else %}
             <form method="post" enctype="multipart/form-data">
@@ -23,7 +33,7 @@
                     <label class="form-label">Pilih File</label>
                     <input type="file" name="file" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Upload Tugas</button>
+                <button type="submit" name="action" value="upload" class="btn btn-primary">Upload Tugas</button>
             </form>
         {% endif %}
     </div>

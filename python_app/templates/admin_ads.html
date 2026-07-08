@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h2>Kelola Iklan</h2>
+        <p>Tambah, edit, atau hapus iklan pendaftaran kampus dari panel admin.</p>
+    </div>
+
+    <div class="dashboard-section">
+        <h4>Tambah / Edit Iklan</h4>
+        <form method="post" action="{{ url_for('admin_ads') }}" class="row g-3">
+            <input type="hidden" name="ad_id" id="ad_id" value="">
+            <div class="col-md-6">
+                <label class="form-label">Judul</label>
+                <input type="text" name="title" id="title" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Link</label>
+                <input type="url" name="link" id="link" class="form-control" placeholder="https://example.com/pendaftaran">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Gambar / Image URL</label>
+                <input type="text" name="image_url" id="image_url" class="form-control" placeholder="https://example.com/banner.jpg">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Nama Tombol</label>
+                <input type="text" name="button_text" id="button_text" class="form-control" placeholder="Buka Link">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Status Aktif</label>
+                <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" name="active" id="active" checked>
+                    <label class="form-check-label" for="active">Tampilkan iklan</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Deskripsi</label>
+                <textarea name="description" id="description" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Simpan Iklan</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="dashboard-section">
+        <h4>Daftar Iklan</h4>
+        {% if ads %}
+            <div class="activity-list">
+                {% for ad in ads %}
+                <div class="activity-item">
+                    <strong>{{ ad.title }}</strong>
+                    <p>{{ ad.description }}</p>
+                    <div class="activity-meta">
+                        Link: {% if ad.link %}<a href="{{ ad.link }}" target="_blank" rel="noopener noreferrer">{{ ad.link }}</a>{% else %}-{% endif %}<br>
+                        Gambar: {{ ad.image_url or '-' }}<br>
+                        Status: {{ 'Aktif' if ad.active else 'Nonaktif' }}
+                    </div>
+                    <div class="button-row mt-3">
+                        {% if ad.link %}
+                        <a href="{{ ad.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">{{ ad.button_text or 'Buka Link' }}</a>
+                        {% endif %}
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="fillAdForm(this)"
+                            data-ad-id="{{ ad.id }}"
+                            data-title="{{ ad.title|e }}"
+                            data-description="{{ ad.description|e }}"
+                            data-link="{{ ad.link|e }}"
+                            data-image-url="{{ ad.image_url|e }}"
+                            data-button-text="{{ ad.button_text|e }}"
+                            data-active="{{ 'true' if ad.active else 'false' }}">
+                            Edit
+                        </button>
+                        <form method="post" action="{{ url_for('admin_ads_delete', ad_id=ad.id) }}" style="display:inline;">
+                            <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Hapus iklan ini?')">Hapus</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Belum ada iklan.</p>
+        {% endif %}
+    </div>
+</div>
+<script>
+function fillAdForm(button) {
+    document.getElementById('ad_id').value = button.dataset.adId || '';
+    document.getElementById('title').value = button.dataset.title || '';
+    document.getElementById('description').value = button.dataset.description || '';
+    document.getElementById('link').value = button.dataset.link || '';
+    document.getElementById('image_url').value = button.dataset.imageUrl || '';
+    document.getElementById('button_text').value = button.dataset.buttonText || '';
+    document.getElementById('active').checked = button.dataset.active === 'true';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+{% endblock %}

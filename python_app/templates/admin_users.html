@@ -31,6 +31,9 @@
                             <td>{{ matkul[item.matkul_id] if item.matkul_id else '-' }}</td>
                             <td>
                                 <a href="{{ url_for('admin_user_edit', user_id=item.id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                <form action="{{ url_for('admin_user_delete', user_id=item.id) }}" method="post" style="display:inline-block; margin-left:4px;">
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Hapus user ini?');">Hapus</button>
+                                </form>
                             </td>
                         </tr>
                     {% else %}

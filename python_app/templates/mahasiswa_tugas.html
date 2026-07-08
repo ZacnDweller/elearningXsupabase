@@ -10,6 +10,7 @@
                         <th>No</th>
                         <th>Judul</th>
                         <th>Deadline</th>
+                        <th>File</th>
                         <th>Status</th>
                         <th>Aksi</th>
                     </tr>
@@ -21,6 +22,13 @@
                         <td>{{ item.judul }}</td>
                         <td>{{ item.deadline or '-' }}</td>
                         <td>
+                            {% if item.file %}
+                                <a href="{{ url_for('download_file', filename='tugas/' ~ item.file) }}" class="btn btn-sm btn-success">⬇ Download</a>
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                        <td>
                             {% if item.id in submitted_map %}
                                 Sudah dikumpulkan
                             {% else %}
@@ -28,7 +36,9 @@
                             {% endif %}
                         </td>
                         <td>
-                            <a href="{{ url_for('mahasiswa_tugas_submit', tugas_id=item.id) }}" class="btn btn-sm btn-primary">Kumpulkan</a>
+                            <a href="{{ url_for('mahasiswa_tugas_submit', tugas_id=item.id) }}" class="btn btn-sm btn-primary">
+                                {% if item.id in submitted_map %}Lihat / Ubah{% else %}Kumpulkan{% endif %}
+                            </a>
                         </td>
                     </tr>
                     {% else %}
