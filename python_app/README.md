@@ -11,11 +11,11 @@ Aplikasi e-learning Python/Flask dengan database Supabase (Postgres).
 > Supabase project reference: `crbwybyrvoohumoykbul`
 > Region: `ap-southeast-1`
 4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+   ```cmd
+   python -m pip install -r requirements.txt
    ```
 5. Jalankan aplikasi:
-   ```bash
+   ```cmd
    python app.py
    ```
 6. Buka `http://127.0.0.1:5000`.

@@ -88,16 +88,20 @@ class App {
 
     setupSidebar() {
         const role = api.getUserRole();
-        
-        // Sembunyikan menu sesuai role
-        if (role !== 'admin') {
-            document.getElementById('nav-users').style.display = 'none';
+        const navUsers = document.getElementById('nav-users');
+        const navPengumpulan = document.getElementById('nav-pengumpulan');
+        const navPembayaran = document.getElementById('nav-pembayaran');
+
+        if (navUsers) {
+            navUsers.style.display = role === 'admin' ? 'block' : 'none';
         }
 
-        if (role === 'mahasiswa') {
-            document.getElementById('nav-pembayaran').style.display = 'block';
-        } else if (role === 'dosen') {
-            document.getElementById('nav-pengumpulan').style.display = 'block';
+        if (navPengumpulan) {
+            navPengumpulan.style.display = role === 'dosen' ? 'block' : 'none';
+        }
+
+        if (navPembayaran) {
+            navPembayaran.style.display = role === 'mahasiswa' || role === 'admin' ? 'block' : 'none';
         }
     }
 

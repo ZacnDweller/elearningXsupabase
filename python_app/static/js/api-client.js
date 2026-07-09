@@ -82,6 +82,11 @@ class APIClient {
         return await this.request(`/users${params}`, { method: 'GET' });
     }
 
+    async getMahasiswa(matkulId = null) {
+        const params = matkulId ? `?matkul_id=${matkulId}` : '';
+        return await this.request(`/mahasiswa${params}`, { method: 'GET' });
+    }
+
     async getUser(userId) {
         return await this.request(`/users/${userId}`, { method: 'GET' });
     }

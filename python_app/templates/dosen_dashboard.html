@@ -29,5 +29,40 @@
             <a class="btn btn-warning text-dark" href="{{ url_for('dosen_presensi') }}">Presensi</a>
         </div>
     </div>
+
+    <div class="dashboard-section">
+        <h2>Daftar Mahasiswa</h2>
+        <p class="text-muted">Prodi: <strong>{{ prodi_name }}</strong> / Matkul: <strong>{{ matkul_name }}</strong></p>
+        {% if mahasiswa_users %}
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Prodi</th>
+                            <th>Matkul</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for mahasiswa in mahasiswa_users %}
+                            <tr>
+                                <td>{{ mahasiswa.id }}</td>
+                                <td>{{ mahasiswa.nama or '-' }}</td>
+                                <td>{{ mahasiswa.username or '-' }}</td>
+                                <td>{{ mahasiswa.email or '-' }}</td>
+                                <td>{{ mahasiswa.prodi_name }}</td>
+                                <td>{{ mahasiswa.matkul_name }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-muted">Belum ada mahasiswa untuk mata kuliah ini.</div>
+        {% endif %}
+    </div>
 </div>
 {% endblock %}

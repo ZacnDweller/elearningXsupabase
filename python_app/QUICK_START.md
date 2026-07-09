@@ -8,17 +8,16 @@
 ## Setup Steps
 
 ### 1. Install Dependencies
-```bash
+```cmd
 cd python_app
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment Variables
 Copy `.env.example` to `.env` and update with your Supabase credentials:
 
-```bash
-# Copy file
-cp .env.example .env
+```cmd
+copy .env.example .env
 ```
 
 Edit `.env`:
@@ -29,7 +28,7 @@ SUPABASE_KEY=your-anon-or-service-key
 ```
 
 ### 3. Start the Application
-```bash
+```cmd
 python app.py
 ```
 
@@ -143,28 +142,18 @@ elearningXsupabase/
 ## API Examples
 
 ### Login
-```bash
-curl -X POST http://localhost:5000/api/v1/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"username": "admin", "password": "password"}'
+```cmd
+curl -X POST "http://localhost:5000/api/v1/auth/login" -H "Content-Type: application/json" -d "{\"username\": \"admin\", \"password\": \"password\"}"
 ```
 
 ### Get Users
-```bash
+```cmd
 curl http://localhost:5000/api/v1/users
 ```
 
 ### Create Materi
-```bash
-curl -X POST http://localhost:5000/api/v1/materi \
-  -H "Content-Type: application/json" \
-  -d '{
-    "judul": "Web Development Basics",
-    "deskripsi": "Learn HTML, CSS, JavaScript",
-    "file": "https://example.com/materi.pdf",
-    "matkul_id": 1,
-    "dosen_id": 2
-  }'
+```cmd
+curl -X POST "http://localhost:5000/api/v1/materi" -H "Content-Type: application/json" -d "{\"judul\": \"Web Development Basics\", \"deskripsi\": \"Learn HTML, CSS, JavaScript\", \"file\": \"https://example.com/materi.pdf\", \"matkul_id\": 1, \"dosen_id\": 2}"
 ```
 
 ## Role-Based Access

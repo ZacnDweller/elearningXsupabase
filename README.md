@@ -37,11 +37,11 @@ This repository now includes a **complete REST API and JavaScript GUI** alongsid
 ## 🚀 Getting Started with New GUI
 
 ### Installation
-```bash
+```cmd
 cd python_app
-pip install -r requirements.txt
-cp .env.example .env
-# Edit .env with your Supabase credentials
+python -m pip install -r requirements.txt
+copy .env.example .env
+rem Edit .env with your Supabase credentials
 python app.py
 ```
 

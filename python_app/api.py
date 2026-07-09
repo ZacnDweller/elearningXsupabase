@@ -233,6 +233,22 @@ def get_users():
         return api_response(message=f'Error: {str(e)}', status_code=500, error=True)
 
 
+@api.route('/mahasiswa', methods=['GET'])
+def get_mahasiswa():
+    """Get all mahasiswa users with optional matkul filter"""
+    try:
+        matkul_id = request.args.get('matkul_id')
+        query = supabase.table('users').select('*').eq('role', 'mahasiswa')
+
+        if matkul_id:
+            query = query.eq('matkul_id', matkul_id)
+
+        response = query.order('id', desc=False).execute()
+        return api_response(data=response.data, message='Mahasiswa retrieved')
+    except Exception as e:
+        return api_response(message=f'Error: {str(e)}', status_code=500, error=True)
+
+
 @api.route('/users/<int:user_id>', methods=['GET'])
 def get_user(user_id):
     """Get user by ID"""

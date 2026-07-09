@@ -48,5 +48,82 @@
             <div class="text-muted">Belum ada data pendaftaran mahasiswa.</div>
         {% endif %}
     </div>
+
+    <div class="dashboard-section">
+        <h2>Daftar Dosen</h2>
+        {% if grouped_dosen %}
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Prodi</th>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for prodi_label, dosen_group in grouped_dosen.items() %}
+                            <tr class="table-group-row">
+                                <td colspan="5"><strong>{{ prodi_label }}</strong></td>
+                            </tr>
+                            {% for dosen in dosen_group %}
+                                <tr>
+                                    <td>{{ prodi_label }}</td>
+                                    <td>{{ dosen.id }}</td>
+                                    <td>{{ dosen.nama or '-' }}</td>
+                                    <td>{{ dosen.username or '-' }}</td>
+                                    <td>{{ dosen.email or '-' }}</td>
+                                </tr>
+                            {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-muted">Belum ada data dosen.</div>
+        {% endif %}
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Daftar Mahasiswa</h2>
+        {% if grouped_mahasiswa %}
+            {% for prodi_label, matkul_groups in grouped_mahasiswa.items() %}
+                <div class="subgroup-section">
+                    <h3>{{ prodi_label }}</h3>
+                    {% for matkul_label, mahasiswa_group in matkul_groups.items() %}
+                        <div class="subgroup-card">
+                            <h4>{{ matkul_label }}</h4>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nama</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for mahasiswa in mahasiswa_group %}
+                                            <tr>
+                                                <td>{{ mahasiswa.id }}</td>
+                                                <td>{{ mahasiswa.nama or '-' }}</td>
+                                                <td>{{ mahasiswa.username or '-' }}</td>
+                                                <td>{{ mahasiswa.email or '-' }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="text-muted">Belum ada data mahasiswa.</div>
+        {% endif %}
+    </div>
 </div>
 {% endblock %}

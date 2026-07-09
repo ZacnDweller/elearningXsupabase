@@ -12,14 +12,14 @@
 ## 📋 Installation Steps
 
 ### Step 1: Navigate to Project Directory
-```bash
+```cmd
 cd c:\xampp\htdocs\elearningXsupabase\python_app
 ```
 - [ ] Successfully changed directory
 
 ### Step 2: Install Python Dependencies
-```bash
-pip install -r requirements.txt
+```cmd
+python -m pip install -r requirements.txt
 ```
 
 The following packages will be installed:
@@ -30,8 +30,8 @@ The following packages will be installed:
 - [ ] requests==2.31.0
 
 ### Step 3: Create Environment File
-```bash
-cp .env.example .env
+```cmd
+copy .env.example .env
 ```
 - [ ] .env file created
 
@@ -49,7 +49,7 @@ SUPABASE_KEY=your-anon-key-or-service-key
 - [ ] SUPABASE_KEY configured
 
 ### Step 5: Verify Setup
-```bash
+```cmd
 python verify_setup.py
 ```
 
@@ -64,7 +64,7 @@ All checks should show ✅:
 ## 🚀 Running the Application
 
 ### Start Flask Server
-```bash
+```cmd
 python app.py
 ```
 

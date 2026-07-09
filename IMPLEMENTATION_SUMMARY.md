@@ -130,21 +130,21 @@ Complete REST API with the following endpoints:
 ## 🚀 How to Use
 
 ### Installation
-```bash
+```cmd
 cd python_app
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### Configuration
-```bash
-# Create .env file from template
-cp .env.example .env
+```cmd
+rem Create .env file from template
+copy .env.example .env
 
-# Edit .env with your Supabase credentials
+rem Edit .env with your Supabase credentials
 ```
 
 ### Run Application
-```bash
+```cmd
 python app.py
 ```
 

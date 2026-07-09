@@ -87,6 +87,30 @@ const DashboardModule = {
                 </div>
 
                 <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="bi bi-table"></i> Ringkasan Data</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="dashboardTableContainer">
+                                    <div class="text-center" id="dashboardLoading">
+                                        <div class="spinner-border text-primary" role="status"></div>
+                                    </div>
+                                    <table class="table table-striped table-hover" id="dashboardTable" style="display:none;">
+                                        <thead>
+                                            <tr id="dashboardTableHeader"></tr>
+                                        </thead>
+                                        <tbody id="dashboardTableBody"></tbody>
+                                    </table>
+                                    <div id="dashboardEmptyState" class="text-muted" style="display:none;">Tidak ada data untuk ditampilkan.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
@@ -141,14 +165,63 @@ const DashboardModule = {
         try {
             const user = api.getCurrentUser();
             const role = user?.role;
+            const dashboardLoading = document.getElementById('dashboardLoading');
+            const dashboardTable = document.getElementById('dashboardTable');
+            const dashboardTableHeader = document.getElementById('dashboardTableHeader');
+            const dashboardTableBody = document.getElementById('dashboardTableBody');
+            const dashboardEmptyState = document.getElementById('dashboardEmptyState');
+
+            const hideTable = () => {
+                if (dashboardLoading) dashboardLoading.style.display = 'none';
+                if (dashboardTable) dashboardTable.style.display = 'none';
+                if (dashboardEmptyState) dashboardEmptyState.style.display = 'none';
+            };
+
+            const showTable = (headerHtml, rowsHtml) => {
+                if (!dashboardLoading || !dashboardTable || !dashboardTableHeader || !dashboardTableBody || !dashboardEmptyState) {
+                    return;
+                }
+
+                dashboardTableHeader.innerHTML = headerHtml;
+                dashboardTableBody.innerHTML = rowsHtml;
+                dashboardLoading.style.display = 'none';
+
+                if (rowsHtml.trim()) {
+                    dashboardTable.style.display = 'table';
+                    dashboardEmptyState.style.display = 'none';
+                } else {
+                    dashboardTable.style.display = 'none';
+                    dashboardEmptyState.style.display = 'block';
+                }
+            };
 
             if (role === 'admin') {
                 const stats = await api.getDashboardStats();
+                const mahasiswa = await api.getMahasiswa();
+
                 if (stats.success) {
                     document.getElementById('adminCount').textContent = stats.data.admin_count;
                     document.getElementById('dosenCount').textContent = stats.data.dosen_count;
                     document.getElementById('mahasiswaCount').textContent = stats.data.mahasiswa_count;
                     document.getElementById('pembayaranCount').textContent = stats.data.pembayaran_pending;
+                }
+
+                if (mahasiswa.success) {
+                    const rows = mahasiswa.data.map(mahasiswaItem => `
+                        <tr>
+                            <td>${mahasiswaItem.id}</td>
+                            <td>${mahasiswaItem.nama || '-'}</td>
+                            <td>${mahasiswaItem.username || '-'}</td>
+                            <td>${mahasiswaItem.email || '-'}</td>
+                        </tr>
+                    `).join('');
+
+                    showTable(
+                        '<tr><th>ID</th><th>Nama</th><th>Username</th><th>Email</th></tr>',
+                        rows
+                    );
+                } else {
+                    hideTable();
                 }
             } else if (role === 'dosen') {
                 const materi = await api.getMateri(user.matkul_id);
@@ -161,6 +234,20 @@ const DashboardModule = {
                     document.getElementById('tugasCount').textContent = tugas.data.length;
                 }
                 document.getElementById('presensiStatus').textContent = 'TUTUP';
+
+                if (tugas.success) {
+                    const rows = tugas.data.map(tugasItem => `
+                        <tr>
+                            <td>${tugasItem.id}</td>
+                            <td>${tugasItem.judul || '-'}</td>
+                            <td>${tugasItem.deadline ? UIUtils.formatDate(new Date(tugasItem.deadline)) : '-'}</td>
+                        </tr>
+                    `).join('');
+
+                    showTable('<tr><th>ID</th><th>Judul Tugas</th><th>Deadline</th></tr>', rows);
+                } else {
+                    hideTable();
+                }
             } else if (role === 'mahasiswa') {
                 const materi = await api.getMateri(user.matkul_id);
                 const tugas = await api.getTugas(user.matkul_id);
@@ -172,6 +259,22 @@ const DashboardModule = {
                     document.getElementById('tugasCount').textContent = tugas.data.length;
                 }
                 document.getElementById('presensiStatus').textContent = 'TUTUP';
+
+                if (materi.success) {
+                    const rows = materi.data.map(materiItem => `
+                        <tr>
+                            <td>${materiItem.id}</td>
+                            <td>${materiItem.judul || '-'}</td>
+                            <td>${materiItem.deskripsi ? materiItem.deskripsi.substring(0, 80) + '...' : '-'}</td>
+                        </tr>
+                    `).join('');
+
+                    showTable('<tr><th>ID</th><th>Judul Materi</th><th>Deskripsi</th></tr>', rows);
+                } else {
+                    hideTable();
+                }
+            } else {
+                hideTable();
             }
         } catch (error) {
             console.error('Dashboard init error:', error);

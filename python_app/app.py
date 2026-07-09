@@ -395,6 +395,17 @@ def count_table(table: str, filters: dict = None):
     return 0
 
 
+def get_users_by_role(role: str, matkul_id=None):
+    try:
+        query = supabase.table('users').select('*').eq('role', role)
+        if matkul_id is not None:
+            query = query.eq('matkul_id', matkul_id)
+        response = query.order('nama', desc=False).execute()
+        return response.data or []
+    except Exception:
+        return []
+
+
 def get_activity_feed(limit: int = 5):
     try:
         response = supabase.table('aktivitas').select('*').order('id', desc=True).limit(limit).execute()
@@ -514,6 +525,25 @@ def admin():
 
     mahasiswa_labels, mahasiswa_totals = get_monthly_student_counts()
     activities = get_activity_feed()
+    dosen_users = get_users_by_role('dosen')
+    mahasiswa_users = get_users_by_role('mahasiswa')
+
+    prodi_map = get_prodi_map()
+    matkul_map = get_matkul_map()
+
+    dosen_users = annotate_users_with_names(dosen_users, prodi_map, matkul_map)
+    mahasiswa_users = annotate_users_with_names(mahasiswa_users, prodi_map, matkul_map)
+
+    grouped_dosen = {}
+    for dosen_user in dosen_users:
+        prodi_label = dosen_user['prodi_name']
+        grouped_dosen.setdefault(prodi_label, []).append(dosen_user)
+
+    grouped_mahasiswa = {}
+    for mahasiswa in mahasiswa_users:
+        prodi_label = mahasiswa['prodi_name']
+        matkul_label = mahasiswa['matkul_name']
+        grouped_mahasiswa.setdefault(prodi_label, {}).setdefault(matkul_label, []).append(mahasiswa)
 
     return render_template(
         'admin_dashboard.html',
@@ -524,7 +554,9 @@ def admin():
         mahasiswa_count=mahasiswa_count,
         mahasiswa_labels=mahasiswa_labels,
         mahasiswa_totals=mahasiswa_totals,
-        activities=activities
+        activities=activities,
+        grouped_dosen=grouped_dosen,
+        grouped_mahasiswa=grouped_mahasiswa
     )
 
 
@@ -540,6 +572,14 @@ def dosen():
     tugas_count = count_table('tugas', {'matkul_id': user['matkul_id']})
 
     presensi_status = get_presensi_status(user['matkul_id'])
+    mahasiswa_users = get_users_by_role('mahasiswa', matkul_id=user['matkul_id'])
+
+    prodi_map = get_prodi_map()
+    matkul_map = get_matkul_map()
+
+    mahasiswa_users = annotate_users_with_names(mahasiswa_users, prodi_map, matkul_map)
+    matkul_name = matkul_map.get(user.get('matkul_id')) or 'Tidak terdaftar'
+    prodi_name = prodi_map.get(user.get('prodi_id')) or 'Tidak terdaftar'
 
     return render_template(
         'dosen_dashboard.html',
@@ -547,7 +587,10 @@ def dosen():
         nama=user['nama'],
         materi_count=materi_count,
         tugas_count=tugas_count,
-        presensi_status=presensi_status
+        presensi_status=presensi_status,
+        mahasiswa_users=mahasiswa_users,
+        matkul_name=matkul_name,
+        prodi_name=prodi_name
     )
 
 
@@ -654,6 +697,24 @@ def get_all_matkul():
     except Exception:
         pass
     return []
+
+
+def get_prodi_map():
+    return {item['id']: item.get('nama_prodi') for item in get_all_prodi()}
+
+
+def get_matkul_map():
+    return {item['id']: item.get('nama_matkul') for item in get_all_matkul()}
+
+
+def annotate_users_with_names(users, prodi_map, matkul_map):
+    result = []
+    for user in users:
+        item = dict(user)
+        item['prodi_name'] = prodi_map.get(user.get('prodi_id')) or 'Tidak terdaftar'
+        item['matkul_name'] = matkul_map.get(user.get('matkul_id')) or 'Tidak terdaftar'
+        result.append(item)
+    return result
 
 
 def get_next_id_for_table(table_name: str):

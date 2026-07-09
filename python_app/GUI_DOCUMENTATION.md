@@ -5,9 +5,9 @@ Dokumentasi lengkap untuk GUI JavaScript E-Learning yang terhubung ke REST API.
 ## Setup Instructions
 
 ### 1. Install Dependencies
-```bash
+```cmd
 cd python_app
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment
@@ -19,7 +19,7 @@ SUPABASE_KEY=your-supabase-key
 ```
 
 ### 3. Run Application
-```bash
+```cmd
 python app.py
 ```
 

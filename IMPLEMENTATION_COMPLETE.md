@@ -164,22 +164,22 @@ python_app/static/
 ## 🚀 How to Use
 
 ### 1. Install Dependencies
-```bash
+```cmd
 cd python_app
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment
-```bash
-cp .env.example .env
-# Edit .env with your Supabase credentials:
-# SUPABASE_URL=your-url
-# SUPABASE_KEY=your-key
-# FLASK_SECRET_KEY=your-secret
+```cmd
+copy .env.example .env
+rem Edit .env with your Supabase credentials:
+rem SUPABASE_URL=your-url
+rem SUPABASE_KEY=your-key
+rem FLASK_SECRET_KEY=your-secret
 ```
 
 ### 3. Run Application
-```bash
+```cmd
 python app.py
 ```
 
